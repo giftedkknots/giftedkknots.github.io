@@ -1,62 +1,52 @@
-:root {
-    --primary-color: #f8edeb; 
-    --accent-color: #fae1dd;  
-    --text-dark: #4a4a4a;
-    --brand-brown: #b08968;
+/* Swiper Container Sizes */
+.swiper {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
 }
 
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    color: var(--text-dark);
-    line-height: 1.6;
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
-header {
-    background-color: var(--primary-color);
-    padding: 1.5rem;
-    text-align: center;
-    border-bottom: 5px solid var(--accent-color);
+/* Modal Styling */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    overflow: auto;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin: 0;
-    color: var(--brand-brown);
-}
-
-nav {
-    margin-top: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--text-dark);
-    font-weight: bold;
-    margin: 0 15px;
-    text-transform: uppercase;
-}
-
-.section {
-    max-width: 900px;
-    margin: 40px auto;
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
     padding: 20px;
-}
-
-footer {
-    background: var(--text-dark);
-    color: white;
-    text-align: center;
-    padding: 30px;
-    margin-top: 50px;
-}
-
-.btn {
-    display: inline-block;
-    background: var(--brand-brown);
-    color: white;
-    padding: 10px 25px;
-    text-decoration: none;
+    width: 80%;
+    max-width: 700px;
     border-radius: 20px;
+    position: relative;
 }
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Action Buttons */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.insta-btn { background-color: #E1306C; color: white; flex: 1; text-align: center; padding: 10px; border-radius: 10px; text-decoration: none; }
+.whatsapp-btn { background-color: #25D366; color: white; flex: 1; text-align: center; padding: 10px; border-radius: 10px; text-decoration: none; }
